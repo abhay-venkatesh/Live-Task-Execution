@@ -5,9 +5,11 @@ import 'angular-animate';
 import 'angular-aria';
 import 'angular-material';
 
+import Sliders from 'src/sliders/Sliders';
+
 import AppController from 'src/AppController';
 
-export default angular.module( 'starter-app', [ 'ngMaterial' ] )
+export default angular.module( 'starter-app', [ 'ngMaterial', Sliders.name ] )
   .config(($mdIconProvider, $mdThemingProvider) => {
     // Register the user `avatar` icons
     $mdIconProvider
